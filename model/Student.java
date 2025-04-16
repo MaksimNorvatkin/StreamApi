@@ -11,6 +11,7 @@ public class Student {
 		this.name = name;
 		this.age = age;
 		this.group = group;
+		this.sexType = sexType;
 		group.addPerson(this);
 	}
 
