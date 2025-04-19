@@ -14,7 +14,6 @@ public class Task07 {
 		IntStream.rangeClosed(2, 9)
 				.boxed()
 				.flatMap(a -> IntStream.rangeClosed(2, 9)
-						// Преобразуем пару чисел в строку "a * b = результат"
 						.mapToObj(b -> String.format("%d * %d = %d", a, b, a * b))
 				)
 				.forEach(System.out::println);
